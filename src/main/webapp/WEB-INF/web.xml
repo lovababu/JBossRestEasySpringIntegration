@@ -33,7 +33,8 @@
         <servlet-name>resteasy-servlet</servlet-name>
         <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
-
+    <!-- This config variable must be set if your servlet-mapping for the Resteasy servlet
+    has a url-pattern other than /*.  -->
     <context-param>
         <param-name>resteasy.servlet.mapping.prefix</param-name>
         <param-value>/rest</param-value>
